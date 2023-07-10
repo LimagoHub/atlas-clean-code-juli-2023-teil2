@@ -30,13 +30,24 @@ namespace atlas::game {
             terminate_move( "Mensch");
         }
 
+
+
         auto execute_move()->void  {
-            while(true) {
-                std::cout << "Es gibt " << stones << " Steine. Bitte nehmen Sie 1,2 oder 3." << std::endl;
-                std::cin >> move;
-                if(move >= 1 && move <= 3) break;
-                std::cout << "Ungueltiger Zug!" << std::endl;
-            }
+            do {
+                request_players_move();
+            } while(turn_is_invalid());
+        }
+
+        bool turn_is_invalid() {
+            if(is_turn_valid()) return false;
+            std::cout << "Ungueltiger Zug!" << std::endl;
+            return true;
+
+        }
+
+        void request_players_move()  {
+            std::cout << "Es gibt " << stones << " Steine. Bitte nehmen Sie 1,2 oder 3." << std::endl;
+            std::cin >> move;
         }
 
 
@@ -64,6 +75,9 @@ namespace atlas::game {
         }
 
         // -------- Sumpf -------------------
+
+        bool is_turn_valid() const { return move >= 1 && move <= 3; }
+
         auto update_board()-> void { stones -= move; }
 
         auto is_gameover() -> bool { // Operation
