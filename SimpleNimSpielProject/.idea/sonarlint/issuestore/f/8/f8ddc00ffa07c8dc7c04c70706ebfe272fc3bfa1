@@ -1,0 +1,4 @@
+
+¶	cpp:S5952
+"”Add a using-declaration to this derived class to inherit the constructors of "abstract_nimgame_player", and remove the ones you manually duplicated.(¬ÈÊŠüÿÿÿÿ8±ûŞ¦”1
+Y	cpp:S5945"=Use "std::array" or "std::vector" instead of a C-style array.(Ô˜äÈ8²ûŞ¦”1

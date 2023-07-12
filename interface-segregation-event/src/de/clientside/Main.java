@@ -39,6 +39,12 @@ class Metzger {
 
 
 	public void schlachten(final Object tier) {
+		try {
+			Thread.sleep(1000);
+		} catch (InterruptedException e) {
+			Thread.currentThread().interrupt();
+			throw new RuntimeException(e);
+		}
 		System.out.println("messer wetz");
 	}
 }
