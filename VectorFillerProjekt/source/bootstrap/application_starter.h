@@ -11,6 +11,11 @@ namespace atlas::bootstrap {
 
     public:
         auto run()-> void {
+
+            // Generator
+            // vector_factory (injected Generator)
+            // client (inject vector_factory)
+            // client.go();
             std::cout << "App wurde gestartet" << std::endl;
         }
     };

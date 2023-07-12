@@ -1,0 +1,7 @@
+
+„	cpp:S3624"âExplicitly define or delete the missing copy constructor and copy assignment operator so that they will not be implicitly provided. Additionally, you may consider defining the move assignment operator and the move constructor.(­ÑÚùÿÿÿÿ8Ë¤ƒÑ”1
+j	cpp:S4963"IRemove this class' destructor so that the class follows the rule of Zero.(­ÑÚùÿÿÿÿ8Ì¤ƒÑ”1
+K	cpp:S1709"/Add the "explicit" keyword to this constructor.(ë¨˜È8Ì¤ƒÑ”1
+o	cpp:S1172"SRemove the unused parameter "a", make it unnamed, or declare it "[[maybe_unused]]".(ë¨˜È8Ì¤ƒÑ”1
+E	cpp:S5817")This function should be declared "const".(¢”İÑ8Í¤ƒÑ”1
+C	cpp:S5827"'Replace the redundant type with "auto".(Ñì–8†¶•Ñ”1
