@@ -7,7 +7,7 @@
 #include <chrono>
 #include "../stopwatch.h"
 
-namespace times {
+namespace atlas::times {
 
     class stopwatch_impl : public stopwatch {
     public:

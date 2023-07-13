@@ -17,9 +17,7 @@ public:
     auto go()-> void {
         auto data = factory->create_and_fill_vector(INT32_MAX/16);
 
-        for (int i = 0; i < 10; ++i) {
-            std::cout << (*data)[i] << std::endl;
-        }
+
     }
 
 private:

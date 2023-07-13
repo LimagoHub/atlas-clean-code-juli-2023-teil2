@@ -8,7 +8,7 @@
 #include <chrono>
 
 
-namespace times {
+namespace atlas::times {
 
     class stopwatch {
 
