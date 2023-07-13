@@ -13,7 +13,7 @@ namespace atlas::collections {
         using VectorPointer = std::shared_ptr<std::vector<T>>;
 
         VectorPointer data_;
-        size_t size_;
+
 
     protected:
         auto getData() const -> VectorPointer  {
@@ -23,19 +23,17 @@ namespace atlas::collections {
 
 
         [[nodiscard]]auto getSize() const -> size_t  {
-            return size_;
+            return data_->size();
         }
 
-        virtual auto fill_array() -> void = 0;
+        virtual auto fill_vector() -> void = 0;
 
     public:
         ~abstract_vector_factory() override = default;
         auto create_and_fill_vector(size_t size) -> VectorPointer final {
 
             data_ = std::shared_ptr<std::vector<T>>{new std::vector<T>(size)};
-
-            size_ = size;
-            fill_array();
+            fill_vector();
             return data_;
         }
     };

@@ -7,19 +7,19 @@
 #include <chrono>
 #include "../stopwatch.h"
 
-namespace atlas::time {
+namespace times {
 
     class stopwatch_impl : public stopwatch {
     public:
-        void start() {
+        void start() override {
             startTime_ = std::chrono::high_resolution_clock::now();
         }
 
-        void stop() {
+        void stop() override {
             endTime_ = std::chrono::high_resolution_clock::now();
         }
 
-        std::chrono::milliseconds elapsedDuration() {
+        std::chrono::milliseconds elapsedDuration() override{
             return std::chrono::duration_cast<std::chrono::milliseconds>(endTime_ - startTime_);
         }
 

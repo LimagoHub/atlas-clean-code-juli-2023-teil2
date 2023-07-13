@@ -18,7 +18,7 @@ namespace atlas::collections {
         explicit vector_factory_sequential_impl(MyGenerator generator) : generator_(std::move(generator)) {}
         ~vector_factory_sequential_impl()  override = default;
     protected:
-        auto fill_array() -> void override {
+        auto fill_vector() -> void override {
             auto field = this->getData();
             for (size_t i = 0; i < this->getSize(); ++i) {
                 field->at(i) = generator_->next();

@@ -5,6 +5,7 @@
 #pragma once
 #include <random>
 #include <climits>
+
 #include "../number_generator.h"
 
 namespace atlas::generators {
@@ -18,7 +19,9 @@ namespace atlas::generators {
             // NOOP
         }
 
-        [[nodiscard]] auto next() -> int override { return distribution_(rng_); }
+        [[nodiscard]] auto next() -> int override {
+            return distribution_(rng_);
+        }
 
     private:
         std::random_device device_;

@@ -11,6 +11,8 @@ namespace atlas::io {
     class writer {
 
     public:
+        virtual ~writer() = default;
+
         virtual auto write(std::string message) const -> void  = 0;
 
     };

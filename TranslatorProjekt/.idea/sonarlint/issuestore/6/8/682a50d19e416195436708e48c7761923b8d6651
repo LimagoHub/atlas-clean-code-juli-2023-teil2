@@ -1,0 +1,5 @@
+
+^	cpp:S1235"='Translator' has virtual functions but non-virtual destructor(‘‚Í»úÿÿÿÿ8ÊĞ³ï”1
+e	cpp:S1235
+"D'ToUpperTranslator' has virtual functions but non-virtual destructor(‘ ãˆüÿÿÿÿ8†Üµï”1
+e	cpp:S1235"D'ToLowerTranslator' has virtual functions but non-virtual destructor(ÎÈÃìøÿÿÿÿ8Ù¥ğ”1

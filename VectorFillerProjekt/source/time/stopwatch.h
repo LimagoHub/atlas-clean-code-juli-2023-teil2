@@ -8,7 +8,7 @@
 #include <chrono>
 
 
-namespace atlas::time {
+namespace times {
 
     class stopwatch {
 
@@ -24,7 +24,7 @@ namespace atlas::time {
         /// Returns the elapsed duration.
         ///
         /// @return the elapsed time duration between the last call to `start()` and `stop()`
-        [[nodiscard]] virtual auto elapsedDuration() const ->std::chrono::milliseconds = 0;
+        [[nodiscard]] virtual auto elapsedDuration()->std::chrono::milliseconds = 0;
     };
 
 
